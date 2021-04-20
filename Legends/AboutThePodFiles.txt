@@ -1,0 +1,9 @@
+  Pod Files:-
+  1.IQKeyboardManagerSwift :- used for handle keyboard auto matically
+  2.SwiftPhoneNumberFormatter :- when enter the mobile number that time properly formatted
+  3.SkyFloatingLabelTextField :- For enter textfield with animation of place holder
+  4.SBPickerSelector :- pick up the data and value
+  5.CountryPickerView :- For select country from the list
+   https://github.com/AnderGoig/InstagramLogin
+   
+   1.CloudTagView :- for showing the tags with images

@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CountryPickerView (3.2.0)
+  - GLWalkthrough (0.1.1)
+  - InstagramLogin (1.3.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - SBPickerSelector (2.0.6)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SwiftPhoneNumberFormatter (1.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9)
+  - CountryPickerView
+  - GLWalkthrough
+  - InstagramLogin
+  - IQKeyboardManagerSwift
+  - SBPickerSelector
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SwiftPhoneNumberFormatter
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CountryPickerView
+    - GLWalkthrough
+    - InstagramLogin
+    - IQKeyboardManagerSwift
+    - SBPickerSelector
+    - SkyFloatingLabelTextField
+    - SwiftPhoneNumberFormatter
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CountryPickerView: 9b093bfffb4b06a69ba6185a798cadbf863720e7
+  GLWalkthrough: 802e6f7f23ac16d77b3c64dfbf6b4d60d3d48999
+  InstagramLogin: 55a3ab7aa6ee3f75bf06fdec1bb8f1e01e2c0b00
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  SBPickerSelector: 9b05757746b28189bae48f63d1efee286e18a7e9
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SwiftPhoneNumberFormatter: 0cc91f4daa06dd606a9defb21048a75c36a771a2
+
+PODFILE CHECKSUM: ead44481fbebbd9e3a3c3e9c0ea67f49cb3e17fa
+
+COCOAPODS: 1.10.0
