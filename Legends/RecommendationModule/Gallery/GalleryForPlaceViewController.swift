@@ -15,7 +15,6 @@ class GalleryForPlaceViewController: UIViewController {
     @IBOutlet weak var tblDisplayImages: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         self.configData()
     }
@@ -26,6 +25,7 @@ class GalleryForPlaceViewController: UIViewController {
     }
     
     @IBAction func nextClicked(_ sender: Any) {
+        self.moveToNext()
     }
     /*
     // MARK: - Navigation

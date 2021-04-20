@@ -18,38 +18,55 @@ extension GalleryForPlaceViewController {
         self.tblDisplayImages.dataSource = self
         self.tblDisplayImages.tableFooterView = UIView()
     }
+    
+    func moveToNext() {
+        let objSelectPlaceViewController:SelectPlacesViewController = UIStoryboard(name: RecommendationStoryBoard, bundle: nil).instantiateViewController(identifier: "SelectPlacesViewController") as! SelectPlacesViewController
+        self.navigationController?.pushViewController(objSelectPlaceViewController, animated: true)
+    }
 }
 extension GalleryForPlaceViewController:UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 70
         } else {
-            let numberofItems = objGalleryForViewModel.arrnumberOfItems[indexPath.row]
-            if numberofItems > 3 {
-                return CGFloat((100 * (numberofItems/4)))
+           let numberofItems = objGalleryForViewModel.arrnumberOfItems[indexPath.section]
+            if numberofItems > 4 {
+                return CGFloat((95 * (numberofItems % 4)))
             } else {
-                return 100
+                return 95
             }
             //(height * numberofRows (numberofitems/4))
         }
     }
+ 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tblDisplayImages.dequeueReusableCell(withIdentifier: "GalleryTableViewCell") as! GalleryTableViewCell
-        
+            cell.lblTitle.text = objGalleryForViewModel.arrTitle[indexPath.section]
+            cell.lblDate.text = objGalleryForViewModel.arrDateAndTime[indexPath.section]
             return cell
         } else {
             let cell = tblDisplayImages.dequeueReusableCell(withIdentifier: "AllImageTableViewCell") as! AllImageTableViewCell
-            cell.numberofItems = objGalleryForViewModel.arrnumberOfItems[indexPath.row]
-            cell.numberOfSections = Int(floor(Double(cell.numberofItems / 4)))
+            cell.numberofItems = objGalleryForViewModel.arrnumberOfItems[indexPath.section]
+            if cell.numberofItems > 4 {
+                cell.numberOfSections = (cell.numberofItems % 4)
+            }
+            else {
+                cell.numberOfSections = 1
+            }
+            print("number of section = \(cell.numberOfSections)")
             cell.collectionViewImages.reloadData()
+           // cell.backgroundColor = .green
             return cell
         }
        

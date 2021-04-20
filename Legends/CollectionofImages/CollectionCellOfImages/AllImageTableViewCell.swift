@@ -48,12 +48,13 @@ extension AllImageTableViewCell:UICollectionViewDelegate,UICollectionViewDataSou
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let data = numberofItems - (section * 4)
+        print("All Data = \(data)")
         if data > 3 {
             return 4
         } else {
             return data
         }
-        
+    //    return 4
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: 0.0, height: 0.0)

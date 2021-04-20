@@ -13,6 +13,9 @@
 		882A2A54262ED23400EC2197 /* GalleryForPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2A53262ED23400EC2197 /* GalleryForPlaceViewController.swift */; };
 		882A2A57262ED25300EC2197 /* GalleryForViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2A56262ED25300EC2197 /* GalleryForViewModel.swift */; };
 		882A2A5B262EDA1500EC2197 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2A5A262EDA1500EC2197 /* GalleryTableViewCell.swift */; };
+		882A2AC3262F09BF00EC2197 /* SelectPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2AC2262F09BF00EC2197 /* SelectPlacesViewController.swift */; };
+		882A2AC7262F09EC00EC2197 /* SelectPlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2AC6262F09EC00EC2197 /* SelectPlacesViewModel.swift */; };
+		882A2AD5262F163D00EC2197 /* SelectPlaceTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A2AD4262F163D00EC2197 /* SelectPlaceTitleTableViewCell.swift */; };
 		883EB07C2625AB6C00548D88 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EB07B2625AB6C00548D88 /* CustomTabBarController.swift */; };
 		883EB0892625B76000548D88 /* QuationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EB0882625B76000548D88 /* QuationViewController.swift */; };
 		883EB08D2625B77300548D88 /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883EB08C2625B77300548D88 /* BookMarkViewController.swift */; };
@@ -116,6 +119,9 @@
 		882A2A53262ED23400EC2197 /* GalleryForPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryForPlaceViewController.swift; sourceTree = "<group>"; };
 		882A2A56262ED25300EC2197 /* GalleryForViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryForViewModel.swift; sourceTree = "<group>"; };
 		882A2A5A262EDA1500EC2197 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		882A2AC2262F09BF00EC2197 /* SelectPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlacesViewController.swift; sourceTree = "<group>"; };
+		882A2AC6262F09EC00EC2197 /* SelectPlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlacesViewModel.swift; sourceTree = "<group>"; };
+		882A2AD4262F163D00EC2197 /* SelectPlaceTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlaceTitleTableViewCell.swift; sourceTree = "<group>"; };
 		883EB07B2625AB6C00548D88 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		883EB0882625B76000548D88 /* QuationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuationViewController.swift; sourceTree = "<group>"; };
 		883EB08C2625B77300548D88 /* BookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +252,16 @@
 			path = Gallery;
 			sourceTree = "<group>";
 		};
+		882A2AC1262F099000EC2197 /* SelectPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				882A2AC2262F09BF00EC2197 /* SelectPlacesViewController.swift */,
+				882A2AC6262F09EC00EC2197 /* SelectPlacesViewModel.swift */,
+				882A2AD4262F163D00EC2197 /* SelectPlaceTitleTableViewCell.swift */,
+			);
+			path = SelectPlaces;
+			sourceTree = "<group>";
+		};
 		883EB0852625B6B400548D88 /* QuationViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +289,7 @@
 		883F5568262DA63E00987E2C /* RecommendationModule */ = {
 			isa = PBXGroup;
 			children = (
+				882A2AC1262F099000EC2197 /* SelectPlaces */,
 				882A2A52262ED1B800EC2197 /* Gallery */,
 				883F5570262DC67B00987E2C /* Region */,
 			);
@@ -759,6 +776,7 @@
 				886E5CC326206CAC0082E6C7 /* AddContactViewModel.swift in Sources */,
 				886E6B592624254E00A96EE0 /* ProfileCompleteViewController.swift in Sources */,
 				884A33592626E75E0030870F /* PhoneLoadingViewModel.swift in Sources */,
+				882A2AC7262F09EC00EC2197 /* SelectPlacesViewModel.swift in Sources */,
 				886E6BA326245A9400A96EE0 /* ContactListViewModel.swift in Sources */,
 				88B1E83526247D70005AA42C /* ExploreMapViewController.swift in Sources */,
 				888315ED262D550B0095EF64 /* FriendListViewController.swift in Sources */,
@@ -768,6 +786,7 @@
 				888282002621C36E009860AD /* SelectInterstViewModel.swift in Sources */,
 				8808A05A262D5C53007465F6 /* FriendTableViewCell.swift in Sources */,
 				886E5C5626201E5E0082E6C7 /* Constant.swift in Sources */,
+				882A2AD5262F163D00EC2197 /* SelectPlaceTitleTableViewCell.swift in Sources */,
 				88BDEA3C2621615100E40DB7 /* RefferalViewModel.swift in Sources */,
 				886E6BA626245AA900A96EE0 /* ContactModel.swift in Sources */,
 				883F5576262DC73500987E2C /* RecommandOnGooglleTableViewCell.swift in Sources */,
@@ -801,6 +820,7 @@
 				88BDEA51262176A900E40DB7 /* ProfileViewModel.swift in Sources */,
 				884F29D7262850DB0051D141 /* SepratorTableViewCell.swift in Sources */,
 				886E5C1926200E0C0082E6C7 /* AppDelegate.swift in Sources */,
+				882A2AC3262F09BF00EC2197 /* SelectPlacesViewController.swift in Sources */,
 				88BDEA57262176E300E40DB7 /* ProfileModel.swift in Sources */,
 				88B1E83826247D9D005AA42C /* ExploreMapViewModel.swift in Sources */,
 				883F5572262DC70C00987E2C /* TagRegionViewTableViewCell.swift in Sources */,
