@@ -1,9 +1,8 @@
 //
 //  AppDelegate.swift
-//  Legends
+//  Legends App
 //
 //   on 09/04/21.
-//
 
 import UIKit
 import CoreData
